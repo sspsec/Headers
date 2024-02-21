@@ -27,7 +27,7 @@ class BurpExtender(IBurpExtender, IContextMenuFactory):
         self._helpers = callbacks.getHelpers()
         callbacks.setExtensionName("Headers")
         callbacks.registerContextMenuFactory(self)
-        print(base64.b64decode("WytdIEhlYWRlcnMgaXMgbG9hZGVkLi4uClsrXSAjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMKWytdICAgIEFudGhvcjogRG9yYWVtb28KWytdICAgIEJsb2c6ICAgaHR0cHM6Ly9kb3JhZW1vby5naXRodWIuaW8vClsrXSAgICBHaXRodWI6IGh0dHBzOi8vZ2l0aHViLmNvbS9kb3JhZW1vbwpbK10gIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjClsrXSBFbmpveSBpdH4K"))
+        print(base64.b64decode("WytdIEhlYWRlcnMgaXMgbG9hZGVkLi4uClsrXSAjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMKWytdICAgIEFudGhvcjogc3Nwc2VjClsrXSAgICBHaXRodWI6IGh0dHBzOi8vZ2l0aHViLmNvbS9zc3BzZWMKWytdICMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIwpbK10gRW5qb3kgaXR+"))
     def createMenuItems(self, invocation):
         if invocation.getToolFlag() == self._callbacks.TOOL_REPEATER or self._callbacks.TOOL_PROXY:
             menu = []
